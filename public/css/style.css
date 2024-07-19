@@ -1,0 +1,20 @@
+.selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 7px;
+}
+
+.selected-tag {
+    background: blue;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.remove-tag {
+    font-size: 20px;
+}
