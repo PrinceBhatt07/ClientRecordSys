@@ -33,7 +33,7 @@ class ClientController extends Controller
             $query = Client::with('technologies', 'projects')->latest();
 
             if ($request->has('searchTerm')) {
-                $query->where('name', 'like', '%' . $request->searchTerm . '%');
+                $query->search($request->searchTerm);
             }
 
             if (!($user->is_admin || $user->is_super_admin)) {
