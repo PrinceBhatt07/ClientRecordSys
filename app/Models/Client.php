@@ -55,6 +55,9 @@ class Client extends Model
                 ->orWhere('website_url', 'like', '%' . $value . '%');
         })->orWhereHas('technologies', function ($query) use ($value) {
             $query->where('technology', 'like', '%' . $value . '%');
+        })->orWhereHas('projects', function ($query) use ($value) { 
+            $query->where('project_title', 'like', '%' . $value . '%')
+                  ->orWhere('project_description', 'like', '%' . $value . '%'); 
         })->get();
     }
 }

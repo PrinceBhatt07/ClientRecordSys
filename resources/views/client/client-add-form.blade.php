@@ -177,7 +177,7 @@
                                     html += `<span class="bg-primary text-white text-xs fw-medium me-2 px-2 py-1 rounded">${technology.technology}</span>`;
                                 });
                                 html += `</td>
-                                    <td style="display: flex; justify-content: space-evenly;padding-top: 25px; width:110px">`;
+                                    <td style="display: flex; justify-content: space-evenly;padding-top: 25px;">`;
                                 html += `<button type="button" class="viewUser" title="View" data-id="${data.id}"><i class="fa-solid fa-eye"></i></button>
                                     <button type="button" class="edit" title="Edit" data-id="${data.id}"><i class="fa-solid fa-pen-to-square"></i></button>`;
                                 if (isAdmin || isSuperAdmin) {
@@ -195,7 +195,7 @@
                         $('#userTable').html(html);
 
                         const total_records_tr = $('#userTable tr');
-                        let records_per_page = 5;
+                        let records_per_page = 10;
                         let page_number = 1;
                         const total_records = total_records_tr.length;
                         let total_pages = Math.ceil(total_records / records_per_page);

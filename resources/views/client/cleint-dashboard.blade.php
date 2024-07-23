@@ -35,10 +35,10 @@
                 <div class="col-6">
                     Records per page
                     <select class="form-select" id="record_size" style="max-width: 80px">
-                        <option value="2">2</option>
-                        <option value="4" selected>4</option>
-                        <option value="6">6</option>
-                        <option value="8">8</option>
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
                     </select>
                 </div>
                 <div class="row mr-2">
